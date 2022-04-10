@@ -3,10 +3,10 @@ const reverseString = function (s) {
   const input = s;
   const result = [];
 
-  function recursion(input) {
-    while (input.length) {
-      result.unshift(input[0]);
-      input.splice(0, 1);
+  function recursion(value) {
+    while (value.length) {
+      result.unshift(value[0]);
+      value.splice(0, 1);
     }
   }
   recursion(input);
